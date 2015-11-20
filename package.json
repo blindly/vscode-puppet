@@ -1,0 +1,42 @@
+{
+	"name": "Puppet",
+	"description": "Puppet language support and snippets for Visual Studio Code",
+	"version": "0.0.1",
+	"publisher": "Borke",
+  "displayName": "Puppet Extension for Visual Studio Code",
+  "icon": "images/puppetlabs.png",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/blindly/vscode-puppet.git"
+	},
+	"bugs": {
+		"url": "https://github.com/blindly/vscode-puppet/issues"
+	},
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages",
+		"Snippets"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "puppet",
+			"aliases": ["Puppet", "puppet"],
+			"extensions": [".pp"],
+			"configuration": "./puppet.configuration.json"
+		}],
+		"grammars": [{
+			"language": "puppet",
+			"scopeName": "source.puppet",
+			"path": "./syntaxes/puppet.tmLanguage"
+		}],
+		"snippets": [
+			{
+				"language": "puppet",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	}
+}
