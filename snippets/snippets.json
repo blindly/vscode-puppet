@@ -64,16 +64,28 @@
 		"description": "if",
 		"scope": "source.puppet"
 	},
+	"elsif": {
+		"prefix": "elsif",
+		"body": "elsif ${1:test} {\n\t${2:# enter puppet code}\n}$0",
+		"description": "elsif",
+		"scope": "source.puppet"
+	},
 	"ni": {
 		"prefix": "ni",
 		"body": "node \"${1:node}\" inherits ${2:parent} {\n  ${3}\n}\n",
 		"description": "node (inherits)",
 		"scope": "source.puppet"
 	},
-	"n": {
-		"prefix": "n",
+	"node": {
+		"prefix": "node",
 		"body": "node \"${1:node}\" {\n  ${2}\n}\n",
 		"description": "node",
+		"scope": "source.puppet"
+	},
+	"notify": {
+		"prefix": "notify",
+		"body": "notify { '${1:notify}': } \n",
+		"description": "notify",
 		"scope": "source.puppet"
 	},
 	"package": {
