@@ -12,13 +12,13 @@ The Puppet Extension for Visual Studio Code offers rich language support for Pup
 - case
 - cron
 - define
-- else
 - exec
 - file
 - group
 - if
-- ni
-- n
+- elsif
+- else
+- node
 - package
 - service
 - user
