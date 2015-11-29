@@ -1,7 +1,7 @@
 {
 	"name": "Puppet",
 	"description": "Puppet language support and snippets for Visual Studio Code",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "Borke",
   "displayName": "Puppet Extension for Visual Studio Code",
   "icon": "images/puppetlabs.png",
