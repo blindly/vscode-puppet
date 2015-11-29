@@ -13,16 +13,21 @@ The Puppet Extension for Visual Studio Code offers rich language support for Pup
 - cron
 - define
 - exec
+- fail
 - file
+- file_line
 - group
 - if
 - elsif
 - else
+- mount
 - node
 - package
 - service
+- unless
 - user
 - yumrepo
+- versioncmp
 - zfs
 - zpool
 
