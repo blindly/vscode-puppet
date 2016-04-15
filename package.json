@@ -24,7 +24,7 @@
 		"languages": [{
 			"id": "puppet",
 			"aliases": ["Puppet", "puppet"],
-			"extensions": [".pp"],
+			"extensions": [".pp", ".epp"],
 			"configuration": "./puppet.configuration.json"
 		}],
 		"grammars": [{
