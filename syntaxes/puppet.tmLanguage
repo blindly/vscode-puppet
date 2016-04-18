@@ -33,7 +33,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(node|class)\s+((?:[-_A-Za-z0-9&quot;&#39;.]+::)*[-_A-Za-z0-9&quot;&#39;.]+)\s*</string>
+            <string>^\s*(node|class)\s+((?:[-_A-Za-z0-9";.]+::)*[-_A-Za-z0-9";.]+)\s*</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -72,7 +72,7 @@
 					<array>
 						<dict>
 							<key>match</key>
-							<string>\b((?:[-_A-Za-z0-9&quot;.]+::)*[-_A-Za-z0-9&quot;.]+)\b</string>
+							<string>\b((?:[-_A-Za-z0-9".]+::)*[-_A-Za-z0-9".]+)\b</string>
 							<key>name</key>
 							<string>support.type.puppet</string>
 						</dict>
@@ -238,7 +238,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^\s*(\w+)\s*{\s*([&#39;&quot;].+[&#39;&quot;]):</string>
+			<string>^\s*(\w+)\s*{\s*(['"].+['"]):</string>
 			<key>name</key>
 			<string>meta.definition.resource.puppet</string>
 		</dict>
@@ -273,7 +273,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>((\$?)&quot;?[a-zA-Z_\x{7f}-\x{ff}][a-zA-Z0-9_\x{7f}-\x{ff}]*&quot;?):(?=\s+|$)</string>
+			<string>((\$?)"?[a-zA-Z_\x{7f}-\x{ff}][a-zA-Z0-9_\x{7f}-\x{ff}]*"?):(?=\s+|$)</string>
 			<key>name</key>
 			<string>entity.name.section.puppet</string>
 		</dict>
@@ -371,7 +371,7 @@
 		<key>double-quoted-string</key>
 		<dict>
 			<key>begin</key>
-			<string>&quot;</string>
+			<string>"</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
@@ -381,7 +381,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>&quot;</string>
+			<string>"</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
@@ -704,7 +704,7 @@
 		<key>single-quoted-string</key>
 		<dict>
 			<key>begin</key>
-			<string>&#39;</string>
+			<string>'</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
@@ -714,7 +714,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>&#39;</string>
+			<string>'</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
