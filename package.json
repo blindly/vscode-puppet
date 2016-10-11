@@ -1,26 +1,24 @@
 {
-	"name": "Puppet",
-	"description": "Puppet language support and snippets for Visual Studio Code",
-	"version": "0.0.5",
-	"publisher": "Borke",
-  "displayName": "Puppet Extension for Visual Studio Code",
-  "icon": "images/puppetlabs.jpg",
-	"license": "Apache-2.0",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/blindly/vscode-puppet.git"
-	},
-	"bugs": {
-		"url": "https://github.com/blindly/vscode-puppet/issues"
-	},
-	"engines": {
-		"vscode": "^0.10.1"
-	},
-	"categories": [
-		"Languages",
-		"Snippets"
-	],
-	"contributes": {
+    "name": "puppet",
+    "description": "Puppet language support, snippets and linter for Visual Studio Code",
+    "version": "0.2.0",
+    "publisher": "Borke",
+    "license": "MIT",
+    "keywords": [
+        "puppet",
+        "puppet-lint"
+    ],
+    "icon": "puppet.png",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Linters",
+	"Languages",
+	"Snippets"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
 		"languages": [{
 			"id": "puppet",
 			"aliases": ["Puppet", "puppet"],
@@ -38,5 +36,17 @@
 				"path": "./snippets/snippets.json"
 			}
 		]
-	}
+    },
+    "activationEvents": [
+        "onLanguage:puppet"
+    ],
+    "scripts": {
+        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^1.8.5",
+        "vscode": "^0.11.0"
+    }
 }
