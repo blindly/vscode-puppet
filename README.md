@@ -1,14 +1,42 @@
-# PuppetLinter
-Runs puppet-lint on save. 
+# Puppet Extension for Visual Studio Code, now with Linter
 
-* Github: https://github.com/jgreat/vscode-puppetlinter
+The Puppet Extension for Visual Studio Code offers rich language support for Puppet DSL, snippets, and linter when using [Visual Studio Code](http://code.visualstudio.com).
 
-### Requirements
+## Requirements
 puppet-lint ruby gem http://puppet-lint.com/
 
 ```
 sudo gem install puppet-lint
 ```
+
+## Features
+
+### Syntax Keywords
+- Puppet DSL Syntax
+
+### Snippets
+- augeas
+- case
+- cron
+- define
+- exec
+- fail
+- file
+- file_line
+- group
+- if
+- elsif
+- else
+- mount
+- node
+- package
+- service
+- unless
+- user
+- yumrepo
+- versioncmp
+- zfs
+- zpool
 
 ### Disable Checks
 To disable various checks, create a `~/.puppet-lint.rc` file. Add switches, one per line. For full list of switches run `puppet-lint --help`
@@ -28,13 +56,16 @@ When that bug is fixed, just installing this module should work. Until then add 
 }
 ```
 
-### Changelog
-* 0.1.1 - Update metadata and add icon.
-* 0.0.1 - First version. Provide basic linting via puppet-lint.
+## Contributions
 
-### Acknowledgements
-All props go to the excelent tutorial by hoovercj on github:
-https://github.com/hoovercj/vscode-extension-tutorial
+Contributions are welcomed, please file issues and pull requests via the [project homepage](https://github.com/blindly/vscode-puppet).
 
-### Contributing
-Please do. Fork the github repo and submit a PR. 
+### Thanks to contributors
+- [blindly](https://github.com/blindly)
+- [jgreat](https://github.com/jgreat)
+- [dhollinger](https://github.com/dhollinger)
+- [mikemimik](https://github.com/mikemimik)
+
+## Changelog
+0.2.0 - Added MIT License
+0.3.0 - Merged with [Puppet Linter Extension](https://github.com/jgreat/vscode-puppetlinter)
