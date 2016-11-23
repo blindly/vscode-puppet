@@ -67,5 +67,5 @@ Contributions are welcomed, please file issues and pull requests via the [projec
 - [mikemimik](https://github.com/mikemimik)
 
 ## Changelog
-0.2.0 - Added MIT License
-0.3.0 - Merged with [Puppet Linter Extension](https://github.com/jgreat/vscode-puppetlinter)
+- 0.2.0 - Added MIT License
+- 0.3.0 - Merged with [Puppet Linter Extension](https://github.com/jgreat/vscode-puppetlinter)
