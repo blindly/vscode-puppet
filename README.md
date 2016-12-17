@@ -46,16 +46,6 @@ To disable various checks, create a `~/.puppet-lint.rc` file. Add switches, one 
 --no-case_without_default-check
 ```
 
-### Puppet .pp File Detection
-There is a vscode bug filed for Ruby taking .pp file association by default: https://github.com/Microsoft/vscode/issues/5366
-
-When that bug is fixed, just installing this module should work. Until then add the following to your User Preferences json.
-```
-"files.associations": {
-        "*.pp": "puppet"
-}
-```
-
 ## Contributions
 
 Contributions are welcomed, please file issues and pull requests via the [project homepage](https://github.com/blindly/vscode-puppet).
