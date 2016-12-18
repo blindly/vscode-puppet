@@ -59,3 +59,4 @@ Contributions are welcomed, please file issues and pull requests via the [projec
 ## Changelog
 - 0.2.0 - Added MIT License
 - 0.3.0 - Merged with [Puppet Linter Extension](https://github.com/jgreat/vscode-puppetlinter)
+- 0.3.1 - Removed old Puppet file detection documentation
