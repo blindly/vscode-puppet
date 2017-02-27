@@ -21,7 +21,18 @@ export default class PuppetLintProvider {
 
         let options = vscode.workspace.rootPath ? { cwd: vscode.workspace.rootPath } : undefined;
 
-        let childProcess = cp.spawn('puppet-lint', ["--log-format", "%{KIND}:%{line}:%{message}", textDocument.fileName], options);
+        let command = '';
+        let commandOptions = ["--log-format", "%{KIND}:%{line}:%{message}", textDocument.fileName];
+
+        if (process.platform == "win32") {
+            command = "cmd.exe";
+            commandOptions = ["/c", "puppet-lint"].concat(commandOptions);
+        }
+        else {
+            command = "puppet-lint";
+        }
+        commandOptions.concat
+        let childProcess = cp.spawn(command, commandOptions, options);
         if (childProcess.pid) {
             childProcess.stdout.on('data', (data: Buffer) => {
                 decoded += data;
