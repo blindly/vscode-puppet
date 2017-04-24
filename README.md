@@ -1,20 +1,23 @@
 # Puppet Extension for Visual Studio Code, now with Linter
 
-The Puppet Extension for Visual Studio Code offers rich language support for Puppet DSL, snippets, and linter when using [Visual Studio Code](http://code.visualstudio.com).
+The Puppet Extension for Visual Studio Code offers rich language support for Puppet DSL, snippets, linter and parser support when using [Visual Studio Code](http://code.visualstudio.com).
 
 ## Requirements
+
 puppet-lint ruby gem http://puppet-lint.com/
 
 ```
-sudo gem install puppet-lint
+gem install puppet-lint
 ```
 
 ## Features
 
 ### Syntax Keywords
+
 - Puppet DSL Syntax
 
 ### Snippets
+
 - augeas
 - case
 - cron
@@ -39,6 +42,7 @@ sudo gem install puppet-lint
 - zpool
 
 ### Disable Checks
+
 To disable various checks, create a `~/.puppet-lint.rc` file. Add switches, one per line. For full list of switches run `puppet-lint --help`
 
 ```
@@ -51,12 +55,16 @@ To disable various checks, create a `~/.puppet-lint.rc` file. Add switches, one 
 Contributions are welcomed, please file issues and pull requests via the [project homepage](https://github.com/blindly/vscode-puppet).
 
 ### Thanks to contributors
+
 - [blindly](https://github.com/blindly)
 - [jgreat](https://github.com/jgreat)
 - [dhollinger](https://github.com/dhollinger)
 - [mikemimik](https://github.com/mikemimik)
+- [pjmagee](https://github.com/pjmagee)
 
 ## Changelog
+
 - 0.2.0 - Added MIT License
 - 0.3.0 - Merged with [Puppet Linter Extension](https://github.com/jgreat/vscode-puppetlinter)
 - 0.3.1 - Removed old Puppet file detection documentation
+- 0.4.0 - Added Puppet Parser Validate support
